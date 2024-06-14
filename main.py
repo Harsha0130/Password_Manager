@@ -14,6 +14,7 @@ logo_img = PhotoImage(file="logo.png")
 canvas.create_image(100, 100, image=logo_img)
 canvas.grid(column=1, row=0)
 
+# Labels
 web_label = Label(text="Website:")
 web_label.grid(column=0, row=1)
 
@@ -23,15 +24,19 @@ email_label.grid(column=0, row=2)
 password_label = Label(text="Password:")
 password_label.grid(column=0, row=3)
 
-web_input = Entry(width=35)
+# Inputs
+web_input = Entry(width=35, highlightthickness=2, highlightcolor="#80C4E9")
 web_input.grid(column=1, row=1, columnspan=2, sticky="EW")
+web_input.focus()
 
-email_input = Entry(width=35)
+email_input = Entry(width=35, highlightthickness=2, highlightcolor="#80C4E9")
 email_input.grid(column=1, row=2, columnspan=2, sticky="EW")
+email_input.insert(0, "xyz@gmail.com")
 
-password_input = Entry(width=32)
+password_input = Entry(width=32, highlightthickness=2, highlightcolor="#80C4E9")
 password_input.grid(column=1, row=3, sticky="W")
 
+# Buttons
 generate_btn = Button(text="Generate Password")
 generate_btn.grid(column=2, row=3, sticky="EW")
 
