@@ -5,7 +5,7 @@ The application allows you to generate strong passwords and save them along with
 
 Features:
 
-Password Generation: Generates a strong password containing letters, numbers, and symbols.
+Password Generation: Generates a strong password containing letters, numbers, and symbols.\n
 Save Passwords: Allows you to save website URLs, email addresses, and passwords to a file.
 Clipboard Copy: Automatically copies the generated password to the clipboard.
 
