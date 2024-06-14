@@ -1,6 +1,7 @@
 # Password Manager
 
 This is a simple Password Manager application built with Python and Tkinter. The application allows you to generate strong passwords and save them along with associated website URLs and email addresses.
+This project is part of the "100 Days of Code: The Complete Python Pro Bootcamp for 2023" course by Dr. Angela Yu.
 
 ## Features
 
