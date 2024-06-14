@@ -1,20 +1,18 @@
-Password Manager
+# Password Manager
 
-This is a simple Password Manager application built with Python and Tkinter. 
-The application allows you to generate strong passwords and save them along with associated website URLs and email addresses.
+This is a simple Password Manager application built with Python and Tkinter. The application allows you to generate strong passwords and save them along with associated website URLs and email addresses.
 
-Features:
+## Features
 
-Password Generation: Generates a strong password containing letters, numbers, and symbols.\n
-Save Passwords: Allows you to save website URLs, email addresses, and passwords to a file.
-Clipboard Copy: Automatically copies the generated password to the clipboard.
+- **Password Generation**: Generates a strong password containing letters, numbers, and symbols.
+- **Save Passwords**: Allows you to save website URLs, email addresses, and passwords to a file.
+- **Clipboard Copy**: Automatically copies the generated password to the clipboard.
 
+## Requirements
 
-Requirements:
-
-Python 3.x
-Tkinter library (included with Python standard library)
-pyperclip library (install using pip install pyperclip)
+- Python 3.x
+- Tkinter library (included with Python standard library)
+- pyperclip library (install using `pip install pyperclip`)
 
 
 File Structure:
