@@ -14,14 +14,13 @@ This is a simple Password Manager application built with Python and Tkinter. The
 - Tkinter library (included with Python standard library)
 - pyperclip library (install using `pip install pyperclip`)
 
+## File Structure:
 
-File Structure:
-
-main.py: The main script containing the password manager code.
-logo.png: The logo image displayed in the application.
-data.txt: The file where the saved passwords are stored.
+- **main.py**: The main script containing the password manager code.
+- **logo.png**: The logo image displayed in the application.
+- **data.txt**: The file where the saved passwords are stored.
 
 
-Screenshots:
+## Screenshots:
 
 ![Screenshot 2024-06-14 114501](https://github.com/Harsha0130/Password_Manager/assets/127675058/0b0f4279-0821-4aea-9847-f4fa3c87d77a)
