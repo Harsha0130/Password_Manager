@@ -33,4 +33,5 @@ This is a simple Password Manager application built with Python and Tkinter. The
 
 ![Screenshot 2024-06-14 114501](https://github.com/Harsha0130/Password_Manager/assets/127675058/0b0f4279-0821-4aea-9847-f4fa3c87d77a)
 - Updated
+  
 ![Screenshot 2024-06-15 152001](https://github.com/Harsha0130/Password_Manager/assets/127675058/863c0187-3470-4934-be39-d36477cc1da3)
