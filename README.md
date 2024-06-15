@@ -21,7 +21,7 @@ This is a simple Password Manager application built with Python and Tkinter. The
 - **logo.png**: The logo image displayed in the application.
 - **data.txt**: The file where the saved passwords are stored.
 
-## New Features
+## New Features(Updated)
 
 - **Search Password**: A new "Search" button has been added to allow users to find passwords stored in the `data.json` file. Enter the website URL and click "Search" to retrieve the email and password associated with that site.
 - **Exception Handling**: Improved exception handling for file operations. The application now handles scenarios where the `data.json` file is not found, providing appropriate error messages.
@@ -32,4 +32,5 @@ This is a simple Password Manager application built with Python and Tkinter. The
 ## Screenshots:
 
 ![Screenshot 2024-06-14 114501](https://github.com/Harsha0130/Password_Manager/assets/127675058/0b0f4279-0821-4aea-9847-f4fa3c87d77a)
+- Updated
 ![Screenshot 2024-06-15 152001](https://github.com/Harsha0130/Password_Manager/assets/127675058/863c0187-3470-4934-be39-d36477cc1da3)
