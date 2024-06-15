@@ -26,6 +26,7 @@ This is a simple Password Manager application built with Python and Tkinter. The
 - **Search Password**: A new "Search" button has been added to allow users to find passwords stored in the `data.json` file. Enter the website URL and click "Search" to retrieve the email and password associated with that site.
 - **Exception Handling**: Improved exception handling for file operations. The application now handles scenarios where the `data.json` file is not found, providing appropriate error messages.
 - **Data Storage**: Passwords are now stored in a JSON file (`data.json`) instead of a text file for better data management and retrieval.
+- **data.json**: The file where the saved passwords are stored.
  
 
 
