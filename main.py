@@ -32,7 +32,7 @@ def generate_password():
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save():
-    website = web_input.get()
+    website = web_input.get().capitalize()
     email = email_input.get()
     password = password_input.get()
     new_data = {
@@ -67,6 +67,25 @@ def save():
             password_input.delete(0, END)
 
 
+# ---------------------------- FIND PASSWORD ------------------------------- #
+def find_password():
+    website = web_input.get().capitalize()
+    try:
+        with open("data.json", "r") as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError:
+        messagebox.showinfo(title="Error", message="No data file found!.")
+    else:
+        if website in data:
+            email = data[website]["email"]
+            password = data[website]["password"]
+            messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+        elif len(website) == 0:
+            messagebox.showinfo(title="Oops", message="Field is Empty")
+        else:
+            messagebox.showinfo(title="Error", message=f"No details for {website} exists.")
+
+
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Password Manager")
@@ -88,8 +107,8 @@ password_label = Label(text="Password:")
 password_label.grid(column=0, row=3)
 
 # Inputs
-web_input = Entry(width=35, highlightthickness=2, highlightcolor="#80C4E9")
-web_input.grid(column=1, row=1, columnspan=2, sticky="EW")
+web_input = Entry(width=32, highlightthickness=2, highlightcolor="#80C4E9")
+web_input.grid(column=1, row=1, columnspan=2, sticky="W")
 web_input.focus()
 
 email_input = Entry(width=35, highlightthickness=2, highlightcolor="#80C4E9")
@@ -100,10 +119,13 @@ password_input = Entry(width=32, highlightthickness=2, highlightcolor="#80C4E9")
 password_input.grid(column=1, row=3, sticky="W")
 
 # Buttons
-generate_btn = Button(text="Generate Password", command=generate_password)
+generate_btn = Button(text="Generate Password", activebackground="#FFF8E3", command=generate_password)
 generate_btn.grid(column=2, row=3, sticky="EW")
 
-add_btn = Button(text="Add", width=35, command=save)
+add_btn = Button(text="Add", width=35, activebackground="#FFF8E3", command=save)
 add_btn.grid(column=1, row=4, columnspan=2, sticky="EW")
+
+search_btn = Button(text="Search", activebackground="#FFF8E3", command=find_password)
+search_btn.grid(column=2, row=1, sticky="EW")
 
 window.mainloop()
